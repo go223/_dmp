@@ -1,6 +1,7 @@
 /* 定义body颜色 */
 body {
-  background: #000000;
+  background: #041450 url('../images/bg2.png') no-repeat center center;
+  background-size: cover;
 }
 .yb-container {
   width: 1880px;
