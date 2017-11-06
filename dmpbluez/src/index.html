@@ -17,95 +17,144 @@
     <script src="./js/lib/echarts.min.js"></script>
 </head>
 <body>
-    <div class="yb-container clearfix">
-        <div class="yb-cont-l fl">
-            <div class="yb-around" id="left1"></div>
-            <div class="yb-around" id="left2"></div>
-            <div class="yb-around" id="left3"></div>
-            <div class="yb-around" id="left4"></div>
-        </div>
-        <div class="yb-cont-m fl">
-            <h1 class="yb-title">万达大数据管理平台</h1>
-            <div class="yb-show-num clearfix">
-                <div class="yb-show-num-l fl">
-                    <dl class="yb-zy yb-show-dl">
-                        <dt>
-                            <div class="dt-con-b">
-                                <span class="dt-title">今日作业次数</span>
-                            </div>
-                        </dt>
-                        <dd class="show-zy">246</dd>
-                    </dl>
-                    <dl class="yb-xz yb-show-dl">
-                        <dt>
-                            <div class="dt-con-b">
-                                <span class="dt-title">今日新增数据</span>
-                            </div>
-                        </dt>
-                        <dd class="show-xz">246</dd>
-                    </dl>
-                </div>
-                <div class="yb-show-num-m fl">
-                    <div class="shownumber">
-                        <div class="dataStatistics">
-                            <div class="digit_set comma"></div>
-                            <div class="digit_set"></div>
-                            <div class="digit_set"></div>
-                            <div class="digit_set comma"></div>
-                            <div class="digit_set"></div>
-                            <div class="digit_set"></div>
-                            <div class="digit_set comma"></div>
-                            <div class="digit_set"></div>
-                            <div class="digit_set"></div>
-                            <div class="digit_set set_last"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="yb-show-num-r fl">
-                    <dl class="yb-bs yb-show-dl">
-                        <dt>
-                            <div class="dt-con-b">
-                                <span class="dt-title">今日报送数据</span>
-                            </div>
-                        </dt>
-                        <dd class="show-bs">246</dd>
-                    </dl>
-                    <dl class="yb-jr yb-show-dl">
-                        <dt>
-                            <div class="dt-con-b">
-                                <span class="dt-title">目前接入应用</span>
-                            </div>
-                        </dt>
-                        <dd class="show-jr">246</dd>
-                    </dl>
+    <div class="yb-top">
+        <img class="yb-world-bg" src="./images/world-bg.png" alt="万达大数据管理平台" width="281" height="63">
+    </div>
+    <div class="yb-box clearfix">
+        <div class="yb-left-charts yb-sides fl">
+            <ul>
+                <li class="yb-side-arrow a-l-t"></li>
+                <li class="yb-side-arrow a-r-t"></li>
+                <li class="yb-side-arrow a-r-b"></li>
+                <li class="yb-side-arrow a-l-b"></li>
+            </ul>
+            <div class="yb-side-chart-c">
+                <div class="yb-side-chart">
+                    
                 </div>
             </div>
-            <div class="yb-map">
-                <div class="yb-map-container-border">
-                    <ul>
-                        <li class="item-arrow a-l-t"></li>
-                        <li class="item-arrow a-r-t"></li>
-                        <li class="item-arrow a-b-r"></li>
-                        <li class="item-arrow a-b-l"></li>
-                    </ul>
-                    <div class="yb-map-container _maps">
-                        <div class="yb-maps1 maps" id="map1">
-                    
-                        </div>
-                        <div class="yb-maps2 maps" id="map2">
-                    
-                        </div>
-                    </div>
+            <div class="yb-side-chart-c">
+                <div class="yb-side-chart">
+            
+                </div>
+            </div>
+            <div class="yb-side-chart-c">
+                <div class="yb-side-chart">
+            
+                </div>
+            </div>
+            <div class="yb-side-chart-c">
+                <div class="yb-side-chart">
+            
                 </div>
             </div>
         </div>
-        <div class="yb-cont-r fl">
-            <div class="yb-around" id="right1"></div>
-            <div class="yb-around" id="right2"></div>
-            <div class="yb-around" id="right3"></div>
-            <div class="yb-around" id="right4"></div>
+        <div class="yb-center-charts fl">
+            <div class="yb-center-container">
+                <div class="yb-center-top">
+                    <div class="yb-show-num clearfix">
+                        <div class="yb-show-num-l fl">
+                            <dl class="yb-zy yb-show-dl">
+                                <dt>
+                                    <div class="dt-con-b">
+                                        <span class="dt-title">今日作业次数</span>
+                                    </div>
+                                </dt>
+                                <dd class="show-zy">246</dd>
+                            </dl>
+                            <dl class="yb-xz yb-show-dl">
+                                <dt>
+                                    <div class="dt-con-b">
+                                        <span class="dt-title">今日新增数据</span>
+                                    </div>
+                                </dt>
+                                <dd class="show-xz">246</dd>
+                            </dl>
+                        </div>
+                        <div class="yb-show-num-m fl">
+                            <div class="shownumber">
+                                <div class="dataStatistics">
+                                    <div class="digit_set comma"></div>
+                                    <div class="digit_set"></div>
+                                    <div class="digit_set"></div>
+                                    <div class="digit_set comma"></div>
+                                    <div class="digit_set"></div>
+                                    <div class="digit_set"></div>
+                                    <div class="digit_set comma"></div>
+                                    <div class="digit_set"></div>
+                                    <div class="digit_set"></div>
+                                    <div class="digit_set set_last"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="yb-show-num-r fl">
+                            <dl class="yb-bs yb-show-dl">
+                                <dt>
+                                    <div class="dt-con-b">
+                                        <span class="dt-title">今日报送数据</span>
+                                    </div>
+                                </dt>
+                                <dd class="show-bs">246</dd>
+                            </dl>
+                            <dl class="yb-jr yb-show-dl">
+                                <dt>
+                                    <div class="dt-con-b">
+                                        <span class="dt-title">目前接入应用</span>
+                                    </div>
+                                </dt>
+                                <dd class="show-jr">246</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="yb-map">
+                    <div class="yb-map-container-border">
+                        <ul>
+                            <li class="item-arrow a-l-t"></li>
+                            <li class="item-arrow a-r-t"></li>
+                            <li class="item-arrow a-b-r"></li>
+                            <li class="item-arrow a-b-l"></li>
+                        </ul>
+                        <div class="yb-map-container _maps">
+                            <div class="yb-maps1 maps" id="map1">
+                    
+                            </div>
+                            <div class="yb-maps2 maps" id="map2">
+                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="yb-border" id="Border"></div>
+        <div class="yb-right-charts yb-sides fl">
+            <ul>
+                <li class="yb-side-arrow a-l-t"></li>
+                <li class="yb-side-arrow a-r-t"></li>
+                <li class="yb-side-arrow a-r-b"></li>
+                <li class="yb-side-arrow a-l-b"></li>
+            </ul>
+            <div class="yb-side-chart-c">
+                <div class="yb-side-chart">
+            
+                </div>
+            </div>
+            <div class="yb-side-chart-c">
+                <div class="yb-side-chart">
+            
+                </div>
+            </div>
+            <div class="yb-side-chart-c">
+                <div class="yb-side-chart">
+            
+                </div>
+            </div>
+            <div class="yb-side-chart-c">
+                <div class="yb-side-chart">
+            
+                </div>
+            </div>
+        </div>
     </div>
     <script src="./js/lib/mock-min.js"></script>
     <script src="./js/jquery.ybCount.js"></script>

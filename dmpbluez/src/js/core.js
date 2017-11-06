@@ -447,7 +447,7 @@ function map2(){
             textStyle: {
                 color: '#fff'
             },
-            padding:[0, 0, 30, -10]
+            padding:[0, 0, 10, 10]
         },
         geo: {
             map: 'china',

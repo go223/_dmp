@@ -2,6 +2,10 @@
 @body-bg:#041450;
 @border-color:#00b0f0;
 @border-width:1px;
+/* 定义side底部边框颜色 */
+@side-c-c:#155890;
+@side-c-w:2px;
+
 
 
 body{
@@ -9,102 +13,141 @@ body{
     background-size: cover;
 }
 .yb-{
-    &container{
-        width: 1880px;
-        height:1000px;
-        border: @border-width solid @border-color;
-        border-top:none;
-        border: none;
-        margin: 40px auto 0;
-        position: relative;
-        padding: 5px;
-    }
-    &border{
-        width: 1890px;
-        height: 1000px;
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 2;
-    }
-    &cont-{
-        &l{
-            height:100%;
-            width:380px;
-            border-top: @border-width solid @border-color;
-            border-top: none;
-
-            .yb-around:last-child{
-                border-bottom: none;
-            }
-        }
-        &m{
-            width:1110px;
-            height:100%;
-            border-right :@border-width solid @border-color;
-            border-left:@border-width solid @border-color;
-        }
-        &r{
-            height:100%;
-            width:380px;
-            border-top: @border-width solid @border-color;
-            border-top: none;
-
-            .yb-around:last-child{
-                border-bottom: none;
-            }
-        }
-    }
-    &around {
-        width: 370px;
-        margin: 5px;
-        height: 238px;
-        border-bottom: @border-width solid @border-color;
-        position: relative;
-        z-index: 4;
-    }
-    &title{
-        font-size:46px;
-        color:#fff;
-        height:90px;
+    &top{
+        height: 123px;
+        width: 100%;
+        background: url('./../images/top-bg.png') no-repeat center center;
+        background-size: cover;
         text-align: center;
-        letter-spacing: 1px;
-        margin-top: 10px;
+        vertical-align: middle;
+    }
+    &world-bg{
+        margin-top: 30px;
+    }
+    &box{
+        width: 1822px;
+        height: auto;
+        margin: -30px auto 0;
+    }
+    &sides{
+        width: 324px;
+        height: auto;
+        position: relative;
+        border: 1px solid @border-color;
+
+        .yb-side-arrow{
+            width: 32px;
+            height: 32px;
+            position: absolute;
+            background-image:url('./../images/L-C.png');
+            background-repeat: no-repeat;
+            
+        }
+
+        .a-l-t{
+            left: -2px;
+            top: -2px;
+            background-position: 0 0;
+        }
+        .a-r-t{
+            right: -2px;
+            top: -2px;
+            background-position: 0 -32px;
+        }
+        .a-r-b{
+            right: -2px;
+            bottom: -2px;
+            background-position: 0 -64px;
+        }
+        .a-l-b{
+            left: -2px;
+            bottom:-2px;
+            background-position: 0 -96px;
+        }
+
+        .yb-side-chart-c:last-child{
+            border-bottom: none;
+        }
+    }
+    &side-chart-c{
+        height: 230px;
+        border-bottom: @side-c-w solid @side-c-c;
+    }
+    &center-charts{
+        width: 1174px;
+    }
+    &center-container{
+        width: 1050px;
+        margin: 0 auto;
     }
     &show-num{
         width:100%;
 
         &-l,&-r{
-            width:248px;
-            margin-top: -50px;
+            width:176px;
         }
         &-m{
-            width: 610px;
+            width: 698px;
             height: 100px;
-            /* border: @border-width solid #4f81bd;
-            border-radius: 8px;
-            box-shadow: 0 0 20px #ab1ccb inset;
-            background:#0f2763; */
-            padding-top: 12px;
-            margin-top: 20px;
+            padding-top: 70px;
         }
     }
+    &show-dl{
+        width:176px;
+        height: 66px;
+        border: 1px solid @border-color;
+        box-shadow: inset 0 0 20px @border-color;
+        color:#fff;
+        text-align: center;
+        position: relative;
+            
+        .dt-con-b {
+            position: absolute;
+            z-index: 2;
+            width: 150px;
+            height: 35px;
+            border: 2px solid @border-color;
+            left: 13px;
+            top: -16px;
+            font-size: 18px;
+            background: @body-bg;
+        }     
+        .dt-title{
+            display: block;
+            height: 35px;
+            width: 120px;
+            position: absolute;
+            left: 14px;
+            line-height: 35px;
+            background: @body-bg;
+            z-index: 2;
+            top: -2px;
+            text-align: center
+        } 
+        dd{
+            font-size: 26px;
+            line-height: 64px;
+        }  
+
+    }
+    &zy,&bs{
+        margin-bottom: 44px;
+    }
     &map{
-        width: 1110px;
+        width: 100%;
         height: 720px;
+        margin-top: 50px;
 
         &-container{
-            width: 1076px;
-            height: 710px;
+            width: 1050px;
+            height: 694px;
             position: relative;
             z-index: 4;
         }
         &-container-border{
-            width: 1076px;
-            height: 710px;
-            margin: 24px auto 0;
+            width: 1050px;
+            height: 694px;
             position: relative;
-            padding: 20px;
             z-index: 4;
 
             .item-arrow{
@@ -138,54 +181,14 @@ body{
         }
     }
     &maps1,&maps2{
-        width: 1076px;
-        height: 710px;
+        width: 1050px;
+        height: 694px;
         position: absolute;
         left: 0;
         top: 0;
         padding: 20px;
     }
-    &show-dl{
-        width:220px;
-        height: 60px;
-        border: 1px solid @border-color;
-        box-shadow: inset 0 0 20px @border-color;
-        color:#fff;
-        text-align: center;
-        margin: 10px auto 0;
-        position: relative;
-            
-        .dt-con-b {
-            position: absolute;
-            z-index: 2;
-            width: 150px;
-            height: 35px;
-            border: 2px solid @border-color;
-            left: 36px;
-            top: -16px;
-            font-size: 18px;
-            background: @body-bg;
-        }     
-        .dt-title{
-            display: block;
-            height: 35px;
-            width: 120px;
-            position: absolute;
-            left: 14px;
-            line-height: 35px;
-            background: @body-bg;
-            z-index: 2;
-            top: -2px;
-            text-align: center
-        } 
-        dd{
-            font-size: 26px;
-            line-height: 64px;
-        }  
-
-    }
-    &zy,&bs{
-        margin-bottom: 50px;
-    }
+    
+    
             
 }
